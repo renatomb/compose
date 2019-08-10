@@ -22,7 +22,7 @@ Se hai bisogno di più contenitori nello stesso file, unisci i contenitori di cu
 
 # Contenuto della confezione
 
-* `jiraservicedesk.yml` uno [Jira ServiceDesk] server autogestito self managed server utilizzando [streacs/atlassian-jira-servicedesk].
+* `jiraservicedesk.yml` uno [Jira ServiceDesk] server autogestito utilizzando [streacs/atlassian-jira-servicedesk].
 * `openvpn.yml` uno [OpenVPN] server utilizzando [kylemanna/openvpn].
 * `torrent.yml` uno client torrent con un'interfaccia web utilizzando [bishof/torrent].
 * `unifi.yml` uno Ubiquiti Unifi controller per gestione UAP utilizzando [jacobalberty/unifi].
