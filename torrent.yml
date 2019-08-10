@@ -1,0 +1,11 @@
+version: '3'
+services:
+  torrent:
+    image: bishof/torrent
+    ports:
+      - "49184:49184"
+      - "8089:80"
+    volumes:
+      - ./torrent/data:/data
+      - ./torrent/cfg:/home/torrent
+      

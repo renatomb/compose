@@ -1,0 +1,14 @@
+version: '3'
+services:
+  unifi:
+    image: jacobalberty/unifi:stable
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+      - "3478:3478/udp"
+      - "10001:10001/udp"
+    environment:
+      - TZ='America/Recife'
+    volumes:
+      - ./unifi:/unifi
+      

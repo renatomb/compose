@@ -1,0 +1,14 @@
+version: '3'
+services:
+  suportejira:
+    image: streacs/atlassian-jira-servicedesk:4.1.0
+    ports:
+      - "8082:8080"
+    environment:
+      - ORACLE_JAVA_EULA=accepted
+      - JVM_ARGUMENTS="-Dfile.encoding=utf-8 -Dsun.jnu.encoding=UTF-8"
+      - JVM_MEMORY_MIN=512m
+      - JVM_MEMORY_MAX=1024m
+    volumes:
+      - ./jira:/var/opt/atlassian/application-data/jira
+      
