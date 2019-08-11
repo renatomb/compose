@@ -1,6 +1,6 @@
 # compose
 
-[🇺🇸English Instructions🇺🇸](README.md) | [🇮🇹Instruzione Italiane🇮🇹](LEGGIMI.md)
+[🇺🇸English Instructions🇺🇸](README.md) | [🇮🇹Instruzione Italiane🇮🇹](LEGGIMI.md) | [🇫🇷Instructions en français🇫🇷](LISEZ-MOI.md)
 
 Este repositório contém vários arquivos de configuração para uso com o [Docker Compose]. Cada arquivo contém um modelo para um container específico.
 

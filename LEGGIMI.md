@@ -1,6 +1,6 @@
 # compose
 
-[🇺🇸English Instructions🇺🇸](README.md) | [🇧🇷Instruções em Português🇧🇷](LEIAME.md) 
+[🇺🇸English Instructions🇺🇸](README.md) | [🇧🇷Instruções em Português🇧🇷](LEIAME.md) | [🇫🇷Instructions en français🇫🇷](LISEZ-MOI.md)
 
 Questo repository contiene molti file di configurazione da utilizzare con [Docker Compose]. Ogni file contiene una configurazione di esempio per un contenitore specifico.
 
@@ -20,7 +20,7 @@ docker-compose up -d
 
 Se hai bisogno di più contenitori nello stesso file, unisci i contenitori di cui hai bisogno in un'unico `docker-compose.yml`, durante l'unione ricordati di mantenere solo la prima riga `version` e di apportare le modifiche necessarie.
 
-# Contenuto della confezione
+## Contenuto della confezione
 
 * `jiraservicedesk.yml` uno [Jira ServiceDesk] server autogestito utilizzando [streacs/atlassian-jira-servicedesk].
 * `openvpn.yml` uno [OpenVPN] server utilizzando [kylemanna/openvpn].

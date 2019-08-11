@@ -1,6 +1,6 @@
 # compose
 
-[🇧🇷Instruções em Português🇧🇷](LEIAME.md) | [🇮🇹Instruzione Italiane🇮🇹](LEGGIMI.md)
+[🇧🇷Instruções em Português🇧🇷](LEIAME.md) | [🇮🇹Instruzione Italiane🇮🇹](LEGGIMI.md) | [🇫🇷Instructions en français🇫🇷](LISEZ-MOI.md)
 
 This repository contains many config files for use with [Docker Compose]. Each file contains a sample config for a docker container.
 
