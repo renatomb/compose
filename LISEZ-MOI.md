@@ -12,7 +12,7 @@ Renommez le conteneur dont vous avez besoin comme `docker-compose.yml`, puis ex�
 docker-compose up
 ```
 
-Per l'uso in modalità background (daemon):
+Pour une utilisation en arrière-plan (daemon):
 
 ```bash
 docker-compose up -d
