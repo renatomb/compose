@@ -22,10 +22,10 @@ If you need multiple containers in the same file, merge the containers you need 
 
 ## Package contents
 
-* `jiraservicedesk.yml` a [Jira ServiceDesk] self managed server using [streacs/atlassian-jira-servicedesk].
-* `openvpn.yml` an [OpenVPN] server using [kylemanna/openvpn].
-* `torrent.yml` a torrent client with web interface using [bishof/torrent].
-* `unifi.yml` an Ubiquiti Unifi controller for UAP management using [jacobalberty/unifi].
+* [`jira-service-desk`](jira-service-desk/docker-compose.yml) a [Jira ServiceDesk] self managed server using [streacs/atlassian-jira-servicedesk].
+* [`openvpn-server`](openvpn-server/docker-compose.yml) an [OpenVPN] server using [kylemanna/openvpn].
+* [`rutorrent-client`](rutorrent-client/docker-compose.yml) a torrent client with web interface using [bishof/torrent].
+* [`unifi`](unifi/docker-compose.yml) an Ubiquiti Unifi controller for UAP management using [jacobalberty/unifi].
 
 [Docker Compose]: https://docs.docker.com/compose/
 [Jira ServiceDesk]: https://www.atlassian.com/software/jira/service-desk

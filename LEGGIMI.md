@@ -22,10 +22,10 @@ Se hai bisogno di più contenitori nello stesso file, unisci i contenitori di cu
 
 ## Contenuto della confezione
 
-* `jiraservicedesk.yml` uno [Jira ServiceDesk] server autogestito utilizzando [streacs/atlassian-jira-servicedesk].
-* `openvpn.yml` uno [OpenVPN] server utilizzando [kylemanna/openvpn].
-* `torrent.yml` uno client torrent con un'interfaccia web utilizzando [bishof/torrent].
-* `unifi.yml` uno Ubiquiti Unifi controller per gestione UAP utilizzando [jacobalberty/unifi].
+* [`jira-service-desk`](jira-service-desk/docker-compose.yml) uno [Jira ServiceDesk] server autogestito utilizzando [streacs/atlassian-jira-servicedesk].
+* [`openvpn-server`](openvpn-server/docker-compose.yml) uno [OpenVPN] server utilizzando [kylemanna/openvpn].
+* [`rutorrent-client`](rutorrent-client/docker-compose.yml) uno client torrent con un'interfaccia web utilizzando [bishof/torrent].
+* [`unifi`](unifi/docker-compose.yml) uno Ubiquiti Unifi controller per gestione UAP utilizzando [jacobalberty/unifi].
 
 [Docker Compose]: https://docs.docker.com/compose/
 [Jira ServiceDesk]: https://www.atlassian.com/it/software/jira/service-desk
