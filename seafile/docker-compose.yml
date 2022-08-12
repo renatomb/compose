@@ -1,0 +1,39 @@
+version: '2.0'
+services:
+  db:
+    image: mariadb:10.5
+    container_name: seafile-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=<uma senha segura>  # Colocar algo como E8efeofe98gewr8ure4Goaer8
+      - MYSQL_LOG_CONSOLE=true
+    volumes:
+      - /path/to/your/seafile/folder/or/data/store:/var/lib/mysql
+    networks:
+      - seafile-net
+
+  memcached:
+    image: memcached:1.5.6
+    container_name: seafile-memcached
+    entrypoint: memcached -m 256
+    networks:
+      - seafile-net
+          
+  seafile:
+    image: seafileltd/seafile-mc:latest
+    container_name: seafile
+    ports:
+      - "8999:80" # altere 8999 por uma porta disponivel, nao alterar o lado direito (:80)
+    volumes:
+      - /seafile:/shared   # Caminho path onde os arquivos serao armazenados (somente ate o :)
+    environment:
+      - DB_HOST=db
+      - DB_ROOT_PASSWD=<a mesma senha segura da linha 7> 
+      - TIME_ZONE=America/Fortaleza  # Parâmetro recomendado
+    depends_on:
+      - db
+      - memcached
+    networks:
+      - seafile-net
+
+networks:
+  seafile-net:
