@@ -24,7 +24,7 @@ services:
     ports:
       - "8999:80" # altere 8999 por uma porta disponivel, nao alterar o lado direito (:80)
     volumes:
-      - /seafile:/shared   # Caminho path onde os arquivos serao armazenados (somente ate o :)
+      - /seafile:/shared   # Caminho path onde os arquivos serao armazenados, nao alterar o lado direito (:/shared)
     environment:
       - DB_HOST=db
       - DB_ROOT_PASSWD=<a mesma senha segura da linha 7> 
