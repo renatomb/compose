@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  app:
+    image: nextcloud
+    ports:
+      - 8080:80 #Alterar 8080 para uma porta disponivel, nao alterar :80
+    volumes:
+      - ./nextcloud/nextcloud:/var/www/html
+      - ./nextcloud/app:/var/www/html/custom_apps
+      - ./nextcloud/config:/var/www/html/config
+      - ./nextcloud/data:/var/www/html/data
+      - ./nextcloud/theme:/var/www/html/themes/<SEU_TEMA> # Usar somente caso deseje customizar o tema
+    restart: always
