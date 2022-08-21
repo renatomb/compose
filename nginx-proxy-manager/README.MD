@@ -1,4 +1,6 @@
-# Default Administrator User
+# Nginx proxy manager
+
+## Default Administrator User
 
 - Email: admin@example.com
 - Password: changeme
