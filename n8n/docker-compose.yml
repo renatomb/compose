@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  n8n:
+    container_name: n8n
+    ports:
+      - 56789:5678 #Alterar 56789 para uma porta disponivel, nao alterar depois dos dois pontos
+    environment:
+      - WEBHOOK_URL=https://n8nio.example.com/ #Alterar para seu proprio dominio
+      - EXECUTIONS_PROCESS=main
+    volumes:
+      - ./.n8n:/home/node/.n8n
+    image: n8nio/n8n
+    restart: unless-stopped
