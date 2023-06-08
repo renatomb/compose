@@ -36,3 +36,20 @@ No meu TK103 identifiquei que a porta de comunicação é a *5001*, ao tentar vi
 ### Observações sobre o IMEI
 
 Dispositivos que utilizam o protocolo TK103 (porta 5002) senviam um identificador de 12 dígitos no lugar do IMEI. Normalmente consiste dos últimos 11 dígitos do IMEI acrescidos de um 0 na frente. Por exemplo para o IMEI 123456789012345, o identificador seria 056789012345. A solução mais fácil para descobrir isso seria cadastrar dois dispositivos no traccar, um com o IMEI completo e o outro com o identificador e ver qual se comunica. Mais informações disponíveis na página [Traccar - Chinese clones](https://www.traccar.org/clones/).
+
+## Banco de dados mysql
+
+Utilize como referência o arquivo `traccar-mysql.xml`, faça as alterações necessárias e renomeie-o para `traccar.xml` antes de executar o `docker-compose`. Para informações adicionais visite [Traccar - Mysql Database](https://www.traccar.org/mysql/).
+
+### Conectando em um servidor mysql existente que não esteja especificado no mesmo docker-compose
+
+No exemplo a seguir considerei que já há um mysql executando em outro docker-compose, com nome da rede `rede_mysql`, deve-se incluir as seguintes linhas ao final do arquivo `docker-compose.yml`, após a seção *volumes*.
+
+```
+    networks:
+      - rede_mysql
+
+networks:
+  rede_mysql:
+    external: true
+```
