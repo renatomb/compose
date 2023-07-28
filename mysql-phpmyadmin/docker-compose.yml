@@ -6,6 +6,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: substituirPorUmaSenhaSegura
+    volumes:
+      - ./dados:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin
