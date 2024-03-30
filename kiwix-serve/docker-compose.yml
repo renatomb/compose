@@ -1,0 +1,9 @@
+version: '3'
+services:
+  kiwix-serve:
+    image: ghcr.io/kiwix/kiwix-serve:3.7.0
+    volumes:
+      - .:/data
+    ports:
+      - 8666:8080
+    command: '*.zim'
