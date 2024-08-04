@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   traccar:
     image: traccar/traccar:latest

@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   mtproto-proxy:
     image: telegrammessenger/proxy:latest
