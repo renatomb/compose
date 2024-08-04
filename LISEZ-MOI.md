@@ -25,6 +25,7 @@ Si vous avez besoin de plusieurs conteneurs dans le même fichier, fusionnez le 
 * [cloudflare-tunnel](cloudflare-tunnel/docker-compose.yml) un Cloudflare Tunnel en utilisant [cloudflare/cloudflared](https://hub.docker.com/r/cloudflare/cloudflared).
 * [draw.io](draw.io/docker-compose.yml) un [draw.io](https://draw.io) serveur en utilisant [jgraph/draw.io](https://hub.docker.com/r/jgraph/drawio).
 * [guacamole](guacamole/docker-compose.yml) un [Apache Guacamole](https://guacamole.apache.org/) serveur en utilisant [guacamole/guacamole](https://hub.docker.com/r/guacamole/guacamole).
+* [homepage](homepage/docker-compose.yml) un [Homepage](https://gethomepage.dev/latest/) server en utilisant [ghcr.io/gethomepage/homepage](https://ghcr.io/gethomepage/homepage).
 * [kimai](kimai/docker-compose.yml) un [Kimai](https://www.kimai.org/) serveur en utilisant [kimai/kimai2](https://hub.docker.com/r/kimai/kimai2).
 * [kiwix-serve](kiwix-serve/docker-compose.yml) un [Kiwix](https://wiki.kiwix.org/wiki/Kiwix-serve) serveur en utilisant [kiwix/kiwix-serve](https://github.com/kiwix/kiwix-tools/pkgs/container/kiwix-serve).
 * [mongodb](mongodb/docker-compose.yml) un [MongoDB](https://www.mongodb.com/) serveur en utilisant [mongo](https://hub.docker.com/_/mongo) et [mongo-express](https://hub.docker.com/_/mongo-express).
