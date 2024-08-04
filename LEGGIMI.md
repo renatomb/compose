@@ -33,6 +33,7 @@ Se hai bisogno di più contenitori nello stesso file, unisci i contenitori di cu
 * [myst](myst/docker-compose.yml) uno [Mysterium Network](https://www.mysterium.network/) server utilizzando [mysteriumnetwork/myst](https://hub.docker.com/r/mysteriumnetwork/myst).
 * [n8n](n8n/docker-compose.yml) uno [n8n](https://n8n.io/) server utilizzando [n8nio/n8n](https://hub.docker.com/r/n8nio/n8n).
 * [nextcloud](nextcloud/docker-compose.yml) uno [Nextcloud](https://nextcloud.com/) server utilizzando [nextcloud](https://hub.docker.com/_/nextcloud).
+* [nginx-proxy-manager](nginx-proxy-manager/docker-compose.yml) uno [Nginx Proxy Manager](https://nginxproxymanager.com/) server utilizzando [jc21/nginx-proxy-manager](https://hub.docker.com/r/jc21/nginx-proxy-manager).
 * [`openvpn-server`](openvpn-server/docker-compose.yml) uno [OpenVPN] server utilizzando [kylemanna/openvpn].
 * [portainer](portainer/docker-compose.yml) uno [Portainer](https://www.portainer.io/) server utilizzando [portainer/portainer-ce](https://hub.docker.com/r/portainer/portainer-ce).
 * [proxy-telegram-mtproto](proxy-telegram-mtproto/docker-compose.yml) uno [Telegram MTProto Proxy](https://github.com/TelegramMessenger/MTProxy) utilizzando [telegrammessenger/proxy](https://hub.docker.com/r/telegrammessenger/proxy).
