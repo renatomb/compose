@@ -1,0 +1,11 @@
+name: kimaitimetracker
+services:
+    kimai2:
+        image: kimai/kimai2:apache
+        container_name: kimai
+        tty: true
+        stdin_open: true
+        ports:
+            - 8001:8001
+        environment:
+            - DATABASE_URL=mysql://username:password@mysql-server.local:3306/kimai # Substituir username, password e mysql-server.local pelos dados de acesso ao mysql.
