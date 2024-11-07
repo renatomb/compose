@@ -28,6 +28,7 @@ If you need multiple containers in the same file, merge the containers you need 
 * [homepage](homepage/docker-compose.yml) a [Homepage](https://gethomepage.dev/latest/) server using [ghcr.io/gethomepage/homepage](https://ghcr.io/gethomepage/homepage).
 * [kimai](kimai/docker-compose.yml) a [Kimai](https://www.kimai.org/) server using [kimai/kimai2](https://hub.docker.com/r/kimai/kimai2).
 * [kiwix-serve](kiwix-serve/docker-compose.yml) a [Kiwix](https://wiki.kiwix.org/wiki/Kiwix-serve) server using [kiwix/kiwix-serve](https://github.com/kiwix/kiwix-tools/pkgs/container/kiwix-serve).
+* [MeTube](metube/docker-compose.yml) a [MeTube - Self-hosted YouTube downloader (web UI for youtube-dl / yt-dlp)](https://github.com/alexta69/metube).
 * [mongodb](mongodb/docker-compose.yml) a [MongoDB](https://www.mongodb.com/) server using [mongo](https://hub.docker.com/_/mongo) and [mongo-express](https://hub.docker.com/_/mongo-express).
 * [mysql-phpmyadmin](mysql-phpmyadmin/docker-compose.yml) a [MySQL](https://www.mysql.com/) server with [phpMyAdmin](https://www.phpmyadmin.net/) using [mariadb](https://hub.docker.com/_/mariadb) and [phpmyadmin](https://hub.docker.com/_/phpmyadmin).
 * [myst](myst/docker-compose.yml) a [Mysterium Network](https://www.mysterium.network/) server using [mysteriumnetwork/myst](https://hub.docker.com/r/mysteriumnetwork/myst).
