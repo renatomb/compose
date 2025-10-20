@@ -1,16 +1,34 @@
-# Executando o TracCar em Docker
+# Traccar
 
 Este projeto contém as informações necessárias para execução do TracCar usando docker, através do docker-compose.
 
-## Instruções de uso
+## Visão geral
+Configuração para o [Traccar](https://www.traccar.org/), plataforma de rastreamento GPS compatível com centenas de dispositivos e aplicativos móveis.
 
-Caso necessário altere o arquivo `traccar.xml` para configurar o banco de dados desejado.
+## Pré-requisitos
+- Docker 20.10+ com plugin Docker Compose v2.
+- Porta 8082 disponível para a interface web.
+- Faixa de portas 5000-5150 aberta (TCP e UDP) para receber pacotes de rastreadores.
 
-### Execute o docker através do docker-compose
+## Como usar
+1. Ajuste as portas expostas se necessário (lembre-se de abrir a faixa correspondente no firewall).
+2. Edite o arquivo `traccar.xml` conforme as necessidades de protocolo, notificações, banco de dados, etc. Ele é montado via volume `./traccar.xml`.
+3. Inicie com `docker compose up -d`.
+4. Acesse `http://localhost:8082` (usuário padrão `admin`, senha `admin`).
 
-```bash
-docker-compose up -d
-```
+## Configuração
+- **Imagem**: `traccar/traccar:latest`.
+- **Portas**:
+  - `8082`: UI administrativa.
+  - `5000-5150`: portas padrão para dispositivos (TCP e UDP).
+- **Volumes**:
+  - `./logs:/opt/traccar/logs`: diretório de logs.
+  - `./traccar.xml:/opt/traccar/conf/traccar.xml:ro`: arquivo de configuração principal (modo leitura).
+
+## Manutenção
+- Monitore `./logs` para acompanhar dispositivos e falhas.
+- Atualize com `docker compose pull`.
+- Faça backup do arquivo `traccar.xml` e de qualquer banco externo configurado.
 
 ## Conectando-se ao traccar usando o rastreador tk103
 
@@ -53,3 +71,5 @@ networks:
   rede_mysql:
     external: true
 ```
+---
+Autor: Renato Monteiro Batista
