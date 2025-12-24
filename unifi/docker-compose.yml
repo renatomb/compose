@@ -1,6 +1,6 @@
 services:
   unifi:
-    image: jacobalberty/unifi:stable
+    image: jacobalberty/unifi:latest
     ports:
       - "8080:8080"
       - "8443:8443"
@@ -10,4 +10,4 @@ services:
       - TZ='America/Recife'
     volumes:
       - ./unifi:/unifi
-      
+    restart: always
