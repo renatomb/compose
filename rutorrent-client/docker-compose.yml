@@ -1,10 +1,24 @@
 services:
-  torrent:
-    image: bishof/torrent
+  rutorrent:
+    image: renatomb/rutorrent:latest
+    container_name: rutorrent
+    environment:
+      TIMEZONE: ${TIMEZONE:-America/Fortaleza}
+      UID: ${UID:-1000}
+      GID: ${GID:-1000}
+      # Exemplo 1 (ativo): 10 Mbps down / 1 Mbps up
+      RT_DOWNLOAD_RATE_KB: ${RT_DOWNLOAD_RATE_KB:-1250}
+      RT_UPLOAD_RATE_KB: ${RT_UPLOAD_RATE_KB:-125}
+      # Exemplo 2 (ilimitado): descomente para liberar limites
+      # RT_DOWNLOAD_RATE_KB: 0
+      # RT_UPLOAD_RATE_KB: 0
     ports:
-      - "49184:49184"
-      - "8089:80"
+      - "8666:8666"
+      - "51413:51413/tcp"
+      - "51413:51413/udp"
+      - "51414:51414"
     volumes:
-      - ./torrent/data:/data
-      - ./torrent/cfg:/home/torrent
-      
+      - ./downloads:/data/downloads
+      - ./config:/data/config
+      - ./logs:/data/logs
+    restart: unless-stopped
